@@ -1,4 +1,4 @@
- for file in $(git ls-files --exclude-standard); do
+ for file in $(git ls-files); do
    git add $file
    git commit -m "$1"
  done
